@@ -1,0 +1,73 @@
+@media screen and (max-width: 767px) {
+  .intro-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 1.5em;
+  }
+  .intro-header img {
+    width: 100%;
+  }
+  .toggle-btn {
+    width: 2.5em;
+    height: 1.5em;
+  }
+  .btn-indicator {
+    width: 1.5em;
+    height: 1.5em;
+    transition: transform 0.3s ease;
+  }
+  .darkmode .btn-indicator {
+    transform: translateX(1em);
+  }
+  .btn-contato {
+    display: none;
+  }
+  .toggle-lang {
+    font-size: 0.9em;
+  }
+  .toggle-lang h1 {
+    margin: 0em;
+  }
+  .intro-welcome {
+    font-size: 1.5em;
+    padding: 1.5em;
+  }
+  .intro-welcome img {
+    display: none;
+  }
+  .about-me {
+    margin: 1.5em 0em;
+    width: 100%;
+    border-radius: 0em;
+    font-size: 1em;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0em;
+    padding: 1em;
+  }
+  .skills-left {
+    width: 100%;
+    padding: 1em;
+  }
+  .skills-right {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .skills-right-item {
+    height: 20vh;
+    min-width: 50%;
+    padding: 1.5em;
+  }
+  .skills-right-item img {
+    width: 70px;
+  }
+  .topic {
+    font-size: 3em;
+  }
+}
+
+/*# sourceMappingURL=style-mq.css.map */
