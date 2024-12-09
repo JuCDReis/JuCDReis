@@ -74,7 +74,7 @@ h3{
     background:$main-color-light;
     border: 0em;
     border-radius: 0.5em;
-    padding:1.5em;
+    padding:1.2em;
     text-transform: uppercase;
     color: $main-color-dark;
     font-size: 1.1em;
@@ -119,7 +119,7 @@ h3{
   .about-me{
     background-color: $secondary-color-dark;
     margin: 4em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     padding: 2em;
     font-size: 1.3em;
 
@@ -275,12 +275,11 @@ h3{
   color: $main-color-light;
   display:flex;
   height: 85vh;
-  margin: 4em 0em ;
+  margin: 4em 0em;
 }
 
 .projetos{
   display: flex;
-
 }
 .projetos-item{
   padding:1em;

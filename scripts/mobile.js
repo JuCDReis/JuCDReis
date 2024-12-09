@@ -16,11 +16,8 @@ for (let index = 0; index < transitionsElements.length; index++) {
 }
 
 if (window.innerWidth < 992){
- aboutMe.children[1].innerHTML = `I am a front-end developer with the heart of a designer, passionate about learning new skills and improving my existing ones. 
-  <strong>I'm here to turn your ideas into clean, interactive, and stunning websites!</strong>
- Tell me about your next project!`;
 
- skillsText.children[1].innerHTML = ``;
+ skillsText.children[1].innerHTML = `Some of my <strong>hard skills</strong> used to bring your project to life.`;
  skillsJs.children[1].innerHTML = `Java S.`;
  skillsGit.children[1].innerHTML = `Git`;
 

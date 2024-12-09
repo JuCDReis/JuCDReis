@@ -65,7 +65,7 @@ h3 {
   background: #eeeeee;
   border: 0em;
   border-radius: 0.5em;
-  padding: 1.5em;
+  padding: 1.2em;
   text-transform: uppercase;
   color: #4b2699;
   font-size: 1.1em;
@@ -108,7 +108,7 @@ h3 {
 .about-me {
   background-color: #a390cc;
   margin: 4em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 2em;
   font-size: 1.3em;
 }
