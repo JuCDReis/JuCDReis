@@ -1,10 +1,38 @@
+@charset "UTF-8";
 body {
   padding: 0%;
   margin: 0%;
   font-family: "Roboto", sans-serif;
-  background-color: #4b2699;
+  background-color: #192a44;
 }
 
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sphere {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  animation: move 10s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Animação de movimento */
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(calc(var(--dy) * 1px)) translateX(calc(var(--dx) * 1px));
+  }
+}
 h1 {
   font-size: 1.5em;
 }
@@ -20,24 +48,29 @@ h3 {
   padding: 2em 3em;
 }
 
+#logo {
+  position: relative;
+  z-index: 2;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
 }
 
 .intro {
-  background: #4b2699;
-  color: #eeeeee;
+  background: #192a44;
+  color: #F7F7F2;
   margin: 0%;
 }
 .intro strong {
-  color: #a390cc;
+  color: #00B295;
 }
 
 .toggle-btn {
-  background-color: #eeeeee;
-  width: 4em;
-  height: 2em;
+  background-color: #F7F7F2;
+  width: 2.5em;
+  height: 1.5em;
   border-radius: 10em;
   margin: 1.5em;
   padding: 0em;
@@ -49,9 +82,9 @@ h3 {
 }
 
 .btn-indicator {
-  background-color: #a390cc;
-  width: 2.1em;
-  height: 2.1em;
+  background-color: #00B295;
+  width: 1.6em;
+  height: 1.6em;
   border-radius: 60%;
   transition: transform 0.3s ease;
 }
@@ -62,12 +95,12 @@ h3 {
 
 .btn-contato {
   margin: 1.5em;
-  background: #eeeeee;
+  background: #F7F7F2;
   border: 0em;
   border-radius: 0.5em;
   padding: 1.2em;
   text-transform: uppercase;
-  color: #4b2699;
+  color: #192a44;
   font-size: 1.1em;
 }
 
@@ -79,38 +112,27 @@ h3 {
 
 .intro-welcome {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   font-size: 2em;
-}
-.intro-welcome img {
-  width: 35%;
+  padding: 2.5em;
+  margin: 1em;
 }
 .intro-welcome h1 {
-  font-size: 1.9em;
-  margin: 0em;
-}
-.intro-welcome h2 {
-  margin: 0;
-}
-
-.welcome-right {
-  display: flex;
-  flex-direction: column;
-}
-.welcome-right h1 {
   font-size: 1.8em;
 }
-.welcome-right h2 {
+.intro-welcome h2 {
   font-size: 1.4em;
 }
 
 .about-me {
-  background-color: #a390cc;
+  background-color: #00B295;
   margin: 4em;
   border-radius: 0.5em;
   padding: 2em;
   font-size: 1.3em;
+  position: relative;
+  z-index: 10;
 }
 .about-me strong {
   color: #eeeeee;
@@ -132,15 +154,17 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 40%;
-  color: #eeeeee;
+  color: #F7F7F2;
   padding: 2em;
+  position: relative;
+  z-index: 10;
 }
 .skills-left strong {
-  color: #b4a7cf;
+  color: #00B295;
 }
 
 .darkmode .skills-left strong {
-  color: #a390cc;
+  color: #00B295;
 }
 
 .topic {
@@ -159,19 +183,21 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #eeeeee;
+  background-color: #F7F7F2;
   margin: 1em;
   padding: 1em 0.5em;
   border-radius: 0.5em;
-  border: solid 0.3em #a390cc;
+  border: solid 0.3em #00B295;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+  position: relative;
+  z-index: 10;
 }
 .skills-right-item img {
   width: 30%;
 }
 .skills-right-item strong {
   text-transform: uppercase;
-  color: #4b2699;
+  color: #192a44;
   font-size: 1.3em;
   margin-top: 0.5em;
 }
@@ -255,11 +281,13 @@ h3 {
 }
 
 .portfolio {
-  background: #a390cc;
-  color: #eeeeee;
+  background: #00B295;
+  color: #F7F7F2;
   display: flex;
   height: 85vh;
   margin: 4em 0em;
+  position: relative;
+  z-index: 10;
 }
 
 .projetos {
@@ -314,7 +342,7 @@ h3 {
 
 .item-info {
   opacity: 0;
-  color: #eeeeee;
+  color: #F7F7F2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -335,32 +363,32 @@ h3 {
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 12px;
-  background: #4b2699;
+  background: #00B295;
   display: inline-block;
   text-transform: uppercase;
   font-weight: lighter;
-  color: #eeeeee;
+  color: #F7F7F2;
 }
 
 .btn-mais-detalhes {
-  border-radius: 1em;
-  padding: 0.5em;
+  background-color: #F7F7F2;
+  border-radius: 0.5em;
+  border: 0em;
+  padding: 0.5em 1em;
   margin: 0.5em 0em;
-  border: solid #a390cc;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 .btn-mais-detalhes:hover {
   transition: all 0.2s;
-  border: solid #4b2699;
 }
 
 .why-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #eeeeee;
+  color: #F7F7F2;
   padding: 4em;
   margin: 8em 4em;
 }
@@ -373,8 +401,8 @@ h3 {
 }
 
 .card {
-  background-color: #eeeeee;
-  color: #4b2699;
+  background-color: #F7F7F2;
+  color: #192a44;
   padding: 2em 1.5em;
   border-radius: 0.5em;
   margin: 2em 0em;
@@ -401,8 +429,8 @@ h3 {
 
 footer {
   margin: 4em;
-  border-top: solid #eeeeee;
-  color: #eeeeee;
+  border-top: solid #F7F7F2;
+  color: #F7F7F2;
   padding: 4em;
   display: flex;
   justify-content: space-between;
@@ -423,13 +451,14 @@ footer h4 {
   align-items: start;
   line-height: 40px;
   margin: 2em;
+  margin-top: 1em;
 }
 .menu a {
-  color: #a390cc;
+  color: #00B295;
   text-decoration: none;
 }
 .menu a:hover {
-  color: #eeeeee;
+  color: #F7F7F2;
 }
 
 .contato-footer {
@@ -444,50 +473,50 @@ footer h4 {
 }
 
 body.darkmode {
-  background-color: #eeeeee;
+  background-color: #F7F7F2;
 }
 
 .darkmode .toggle-btn {
-  background-color: #4b2699;
+  background-color: #192a44;
 }
 
 .darkmode .btn-indicator {
-  transform: translateX(2em);
-  background-color: #a390cc;
+  transform: translateX(1em);
+  background-color: #00B295;
 }
 
 .darkmode .intro {
-  background: #eeeeee;
-  color: #4b2699;
+  background: #F7F7F2;
+  color: #192a44;
 }
 .darkmode .intro strong {
-  color: #a390cc;
+  color: #00B295;
 }
 
 .darkmode .btn-contato {
-  background-color: #4b2699;
-  color: #eeeeee;
+  background-color: #192a44;
+  color: #F7F7F2;
 }
 
 .darkmode .skills-left {
-  color: #4b2699;
+  color: #192a44;
 }
 
 .darkmode .cards .topic {
-  color: #4b2699;
+  color: #192a44;
 }
 
 .darkmode footer {
-  border-top: solid #4b2699;
-  color: #4b2699;
+  border-top: solid #192a44;
+  color: #192a44;
 }
 
 .darkmode .menu a:hover {
-  color: #4b2699;
+  color: #192a44;
 }
 
 .contact-me {
-  background-color: #a390cc;
+  background-color: #00B295;
   margin: 4em;
   border-radius: 1em;
   padding: 4em;
@@ -517,12 +546,12 @@ body.darkmode {
 
 .btn-return {
   margin: 4em;
-  background: #eeeeee;
+  background: #F7F7F2;
   border: 0em;
   border-radius: 0.5em;
   padding: 1.5em 5em;
   text-transform: uppercase;
-  color: #4b2699;
+  color: #192a44;
   font-size: 1.1em;
 }
 
@@ -533,13 +562,13 @@ body.darkmode {
 }
 
 .darkmode .btn-return {
-  background-color: #4b2699;
-  color: #eeeeee;
+  background-color: #192a44;
+  color: #F7F7F2;
 }
 
 .project {
-  background-color: #eeeeee;
-  color: #4b2699;
+  background-color: #F7F7F2;
+  color: #192a44;
   width: 100%;
   padding: 0em 6em;
   display: flex;
@@ -559,20 +588,20 @@ body.darkmode {
   border-radius: 20px;
   font-size: 12px;
   margin-bottom: 1em;
-  background: #a390cc;
+  background: #00B295;
   display: inline-block;
   text-transform: uppercase;
   font-weight: lighter;
-  color: #eeeeee;
+  color: #F7F7F2;
 }
 
 .btn-site {
-  background: #a390cc;
+  background: #00B295;
   border: 0em;
   border-radius: 0.5em;
   padding: 1em 5em;
   text-transform: uppercase;
-  color: #eeeeee;
+  color: #F7F7F2;
   font-size: 1.1em;
 }
 
@@ -584,13 +613,13 @@ body.darkmode {
 
 .project-screens {
   padding: 4em;
-  color: #eeeeee;
+  color: #F7F7F2;
   display: flex;
   align-items: center;
 }
 
 .darkmode .project-screens {
-  color: #4b2699;
+  color: #192a44;
 }
 
 .screens {

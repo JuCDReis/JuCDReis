@@ -2,7 +2,6 @@ const body = document.querySelector('body');
 const btn = document.querySelector('.toggle-btn');
 const logo = document.querySelector('#logo');
 const logoF = document.querySelector('#logo-f');
-const introMe = document.querySelector('#intro-me');
 const whyMe = document.querySelector('#why-me');
 const tel = document.querySelector('#tel');
 const email = document.querySelector('#email');
@@ -19,7 +18,6 @@ function changeImg(params) {
   if(body.classList.contains('darkmode')){
     logo.setAttribute('src', './assets/logo-light-theme.svg');
     logoF.setAttribute('src', './assets/logo-light-theme.svg');
-    introMe.setAttribute('src', './assets/intro-me-light.svg'); 
     whyMe.setAttribute('src', './assets/why-me-light.svg');  
     tel.setAttribute('src', './assets/telefone-light.svg');  
     email.setAttribute('src', './assets/email-light.svg');  
@@ -28,7 +26,6 @@ function changeImg(params) {
   }else{
     logo.setAttribute('src', './assets/logo-dark-theme.svg');   
     logoF.setAttribute('src', './assets/logo-dark-theme.svg');   
-    introMe.setAttribute('src', './assets/intro-me-dark.svg');  
     whyMe.setAttribute('src', './assets/why-me-dark.svg');  
     tel.setAttribute('src', './assets/telefone-dark.svg');  
     email.setAttribute('src', './assets/email-dark.svg');  

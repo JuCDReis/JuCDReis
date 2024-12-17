@@ -1,6 +1,6 @@
-$main-color-dark:  #4b2699;
-$main-color-light:  #eeeeee;
-$secondary-color-dark: #a390cc;
+$main-color-dark:  #192a44;
+$main-color-light:  #F7F7F2;
+$secondary-color-dark: #00B295;
 $secondary-color-light: #CC9F70;
 
 
@@ -10,6 +10,33 @@ body{
     margin: 0%;
     font-family: 'Roboto', sans-serif;
     background-color: $main-color-dark;
+}
+
+.background{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.sphere {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  animation: move 10s infinite ease-in-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Animação de movimento */
+@keyframes move {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(calc(var(--dy) * 1px)) translateX(calc(var(--dx) * 1px));
+  }
 }
 
 h1{
@@ -25,7 +52,10 @@ h3{
     align-items: center;
     padding: 2em 3em; 
 }
-
+#logo{
+  position: relative;
+  z-index: 2;
+}
 .header-nav{
   display: flex;
   align-items: center;
@@ -45,8 +75,8 @@ h3{
 
   .toggle-btn{
     background-color: $main-color-light;
-    width: 4em;
-    height: 2em;
+    width: 2.5em;
+    height: 1.5em;
     border-radius: 10em;
     margin: 1.5em;
     padding: 0em;
@@ -59,8 +89,8 @@ h3{
   
   .btn-indicator{
     background-color: $secondary-color-dark;
-    width: 2.1em;
-    height: 2.1em;
+    width: 1.6em;
+    height: 1.6em;
     border-radius: 60%;
     transition: transform .3s ease;
   }
@@ -87,27 +117,12 @@ h3{
   }
   .intro-welcome{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 2em;
-
-    img{
-      width: 35%;
-    }
-
-    h1{
-      font-size: 1.9em;
-      margin: 0em;
-    }
-
-    h2{
-      margin:0;
-    }
-  }
-
-  .welcome-right{
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    padding: 2.5em;
+    margin: 1em;
+
     h1{
       font-size: 1.8em;
     }
@@ -116,12 +131,16 @@ h3{
     }
   }
 
+
+
   .about-me{
     background-color: $secondary-color-dark;
     margin: 4em;
     border-radius: 0.5em;
     padding: 2em;
     font-size: 1.3em;
+    position: relative;
+    z-index: 10;
 
     strong{
       color: #eeeeee;
@@ -148,9 +167,11 @@ h3{
     width: 40%;
     color:$main-color-light;
     padding: 2em;
+    position: relative;
+    z-index: 10;
 
     strong{
-      color: #b4a7cf;
+      color: $secondary-color-dark;
     }
   }
 
@@ -183,7 +204,8 @@ h3{
     border-radius: 0.5em;
     border: solid 0.3em $secondary-color-dark;
     clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 25px) 100%,0 100%);
-
+    position: relative;
+    z-index: 10;
     img{
       width: 30%;
     }
@@ -276,6 +298,8 @@ h3{
   display:flex;
   height: 85vh;
   margin: 4em 0em;
+  position: relative;
+    z-index: 10;
 }
 
 .projetos{
@@ -339,7 +363,7 @@ h3{
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 12px;
-  background: $main-color-dark;
+  background: $secondary-color-dark;
   display: inline-block;
   text-transform: uppercase;
   font-weight: lighter;
@@ -347,16 +371,16 @@ h3{
 }
 
 .btn-mais-detalhes{
-  border-radius: 1em;
-  padding: 0.5em ;
+  background-color: $main-color-light;
+  border-radius: 0.5em;
+  border: 0em;
+  padding: 0.5em 1em;
   margin: 0.5em 0em;
-  border: solid $secondary-color-dark;
   font-size: 1.3rem;
   cursor: pointer;
 }
 .btn-mais-detalhes:hover{
   transition: all 0.2s;
-  border: solid $main-color-dark;
 
 }
 .why-me{
@@ -429,6 +453,7 @@ footer{
   align-items: start;
   line-height: 40px;
   margin:2em;
+  margin-top: 1em;
   
   a{
     color: $secondary-color-dark;
@@ -460,7 +485,7 @@ footer{
     background-color: $main-color-dark;
   }
   .darkmode .btn-indicator{
-    transform: translateX(2em);
+    transform: translateX(1em);
     background-color: $secondary-color-dark;
   }
 
