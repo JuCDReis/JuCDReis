@@ -122,6 +122,23 @@
   .card-info-title-mobile p {
     margin: 0;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+    padding: 2em 0em;
+  }
+  footer a > img {
+    width: 90%;
+    margin: 1em;
+  }
+  .menus {
+    flex-direction: column;
+  }
+  .menu {
+    margin: 1em;
+    line-height: 30px;
+  }
 }
 .hide-element {
   display: none;

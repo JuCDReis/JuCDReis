@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const btn = document.querySelector('.toggle-btn');
 const logo = document.querySelector('#logo');
 const logoF = document.querySelector('#logo-f');
-const whyMe = document.querySelector('#why-me');
+const whyMe = document.querySelector('#why-me-img');
 const tel = document.querySelector('#tel');
 const email = document.querySelector('#email');
 
@@ -54,8 +54,5 @@ btn.addEventListener('click', () => {
   store(body.classList.contains('darkmode'));
   changeImg()
 
-  setTimeout( () => {
-    icon.classList.remove('animated');
-  }, 500)
 })
 
