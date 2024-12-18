@@ -104,7 +104,7 @@ h3{
     background:$main-color-light;
     border: 0em;
     border-radius: 0.5em;
-    padding:1.2em;
+    padding:1.1em;
     text-transform: uppercase;
     color: $main-color-dark;
     font-size: 1.1em;
@@ -113,7 +113,7 @@ h3{
   .btn-contato:hover{
     cursor: pointer;
     transition: 0.2s ease-out;
-    scale: 1.1;
+    scale: 1.05;
   }
   .intro-welcome{
     display: flex;
@@ -536,10 +536,11 @@ footer{
     padding: 4em;
     display: flex;
     align-items: center;
+    font-size: 1.1em;
 
     h2{
       text-transform:uppercase;
-      font-size: 3.5em;
+      font-size: 3em;
       color: #eeeeee;
     }
 }
@@ -565,7 +566,7 @@ footer{
     background:$main-color-light;
     border: 0em;
     border-radius: 0.5em;
-    padding:1.5em 5em;
+    padding:1em 3em;
     text-transform: uppercase;
     color: $main-color-dark;
     font-size: 1.1em;
@@ -573,7 +574,7 @@ footer{
 .btn-return:hover{
   cursor: pointer;
   transition: 0.2s ease-out;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .darkmode .btn-return{
@@ -614,7 +615,7 @@ footer{
   background:$secondary-color-dark;
   border: 0em;
   border-radius: 0.5em;
-  padding:1em 5em;
+  padding:1em 3em;
   text-transform: uppercase;
   color: $main-color-light;
   font-size: 1.1em;
@@ -622,7 +623,7 @@ footer{
 .btn-site:hover{
   cursor: pointer;
   transition: 0.2s ease-out;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .project-screens{

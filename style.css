@@ -98,7 +98,7 @@ h3 {
   background: #F7F7F2;
   border: 0em;
   border-radius: 0.5em;
-  padding: 1.2em;
+  padding: 1.1em;
   text-transform: uppercase;
   color: #192a44;
   font-size: 1.1em;
@@ -107,7 +107,7 @@ h3 {
 .btn-contato:hover {
   cursor: pointer;
   transition: 0.2s ease-out;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .intro-welcome {
@@ -436,8 +436,6 @@ footer {
   padding: 4em;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  z-index: 11;
 }
 footer h4 {
   text-transform: uppercase;
@@ -530,10 +528,11 @@ body.darkmode {
   padding: 4em;
   display: flex;
   align-items: center;
+  font-size: 1.1em;
 }
 .contact-me h2 {
   text-transform: uppercase;
-  font-size: 3.5em;
+  font-size: 3em;
   color: #eeeeee;
 }
 
@@ -557,7 +556,7 @@ body.darkmode {
   background: #F7F7F2;
   border: 0em;
   border-radius: 0.5em;
-  padding: 1.5em 5em;
+  padding: 1em 3em;
   text-transform: uppercase;
   color: #192a44;
   font-size: 1.1em;
@@ -566,7 +565,7 @@ body.darkmode {
 .btn-return:hover {
   cursor: pointer;
   transition: 0.2s ease-out;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .darkmode .btn-return {
@@ -607,7 +606,7 @@ body.darkmode {
   background: #00B295;
   border: 0em;
   border-radius: 0.5em;
-  padding: 1em 5em;
+  padding: 1em 3em;
   text-transform: uppercase;
   color: #F7F7F2;
   font-size: 1.1em;
@@ -616,7 +615,7 @@ body.darkmode {
 .btn-site:hover {
   cursor: pointer;
   transition: 0.2s ease-out;
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .project-screens {
