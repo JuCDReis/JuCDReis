@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             } else {
-                entry.target.classList.remove('visible'); // Remove the visible class when out of view
+                entry.target.classList.remove('visible'); 
             }
         });
     }, options);

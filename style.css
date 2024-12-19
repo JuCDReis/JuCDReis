@@ -311,33 +311,33 @@ h3 {
 }
 
 .p1 {
-  background-image: url(./assets/teste-vocacional-c.svg);
+  background-image: url(./assets/);
   background-size: cover;
   background-position-x: center;
 }
 
 .p1:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/teste-vocacional-c.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
 }
 
 .p2 {
-  background-image: url(./assets/la-pausa-c.svg);
+  background-image: url(./assets/);
   background-size: cover;
   background-position-x: center;
 }
 
 .p2:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/la-pausa-c.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
 }
 
 .p3 {
-  background-image: url(./assets/qual-e-a-musica-c.svg);
+  background-image: url(./assets/);
   background-size: cover;
   background-position-x: center;
 }
 
 .p3:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/qual-e-a-musica-c.svg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
 }
 
 .item-info {
