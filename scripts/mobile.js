@@ -34,15 +34,16 @@ cardInfo1.innerHTML = `<div class="card-info-title-mobile">
 cardInfo2.innerHTML = `<div class="card-info-title-mobile">
                                     <strong>learning and research</strong><img src="./assets/icon-research.svg" alt="">
                                 </div>
-                                <p>I'm always willing to try new technologies and methods to ensure I deliver my very best work. 
-                                    While I consider myself a beginner, I'm never daunted by the unknown and constantly strive to learn and grow.
+                                <p>
+                                  I'm always willing to try new technologies and methods to ensure I deliver my very best work. 
+                                  I'm never daunted by the unknown and constantly strive to learn and grow. Whatever the challenge is, I'm up for it.
                                     </p>`
 
 cardInfo3.innerHTML = `<div class="card-info-title-mobile">
                                     <strong>commitment</strong><img src="./assets/icon-check.svg" alt="">
                                 </div>
-                                <p>I treat every project as a priority. 
-                                    I actively listen to your needs and ideas to develop high-fidelity interfaces that match your vision. 
-                                    I utilize optimized methodologies to meet deadlines while delivering high-quality work.
+                                <p>
+                                  I treat every project as a priority. I actively listen to your needs and ideas to develop 
+                                  high-fidelity interfaces that match your vision. Working to meet deadlines while delivering high-quality work.
                                     </p>`
 }
