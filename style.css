@@ -175,7 +175,7 @@ h3 {
 
 .skills-right {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .skills-right-item {
@@ -229,6 +229,16 @@ h3 {
 
 .item-git:hover {
   border: solid 0.3em #f03c2e;
+  transition: 0.5s;
+}
+
+.item-py:hover {
+  border: solid 0.3em #e5b045;
+  transition: 0.5s;
+}
+
+.item-wcag:hover {
+  border: solid 0.3em #bf1b30;
   transition: 0.5s;
 }
 
@@ -311,33 +321,33 @@ h3 {
 }
 
 .p1 {
-  background-image: url(./assets/);
+  background-image: url(./assets/python/py-face.svg);
   background-size: cover;
   background-position-x: center;
 }
 
 .p1:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/python/py-face.svg");
 }
 
 .p2 {
-  background-image: url(./assets/);
+  background-image: url(./assets/nasalisation/nasa-face.svg);
   background-size: cover;
   background-position-x: center;
 }
 
 .p2:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/nasalisation/nasa-face.svg");
 }
 
 .p3 {
-  background-image: url(./assets/);
+  background-image: url(./assets/qual-e-a-musica-c.svg);
   background-size: cover;
   background-position-x: center;
 }
 
 .p3:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/qual-e-a-musica-c.svg");
 }
 
 .item-info {
