@@ -377,14 +377,17 @@ h3{
   font-weight: lighter;
   color: $main-color-light;
 }
+.tags{
+  margin-bottom:0.5em;
+}
 
 .btn-mais-detalhes{
   background-color: $main-color-light;
   border-radius: 0.5em;
   border: 0em;
   padding: 0.5em 1em;
-  margin: 0.5em 0em;
-  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .btn-mais-detalhes:hover{
@@ -571,7 +574,7 @@ footer{
 }
 
 .btn-return{
-    margin: 4em;
+    margin: 1em 4em;
     background:$main-color-light;
     border: 0em;
     border-radius: 0.5em;
@@ -595,7 +598,6 @@ footer{
   background-color: $main-color-light;
   color: $main-color-dark;
   width: 100%;
-  padding: 0em 6em;
   display: flex;
   justify-content: space-between;
 }
@@ -624,7 +626,7 @@ footer{
   background:$secondary-color-dark;
   border: 0em;
   border-radius: 0.5em;
-  padding:1em 3em;
+  padding:0.5em 2em;
   text-transform: uppercase;
   color: $main-color-light;
   font-size: 1.1em;
@@ -636,10 +638,13 @@ footer{
 }
 
 .project-screens{
-  padding: 4em;
+  padding: 4em 6em;
   color: $main-color-light;
   display:flex;
   align-items: center;
+}
+.img-c{
+  width: 60vw;
 }
 
 .darkmode .project-screens{
